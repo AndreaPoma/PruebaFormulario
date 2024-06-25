@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="cssformulario.css">
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <form action="procesar_formulario.php" method="post" enctype="multipart/form-data">
+
+            <h1>Formulario de pagos</h1>
+            <img class="img-insignia" src="img/FatimaSchool.png" alt="Insignia de Fatima School">
+            <br><br>
+            <div class="input-box">
+                <label for="">Escriba apellidos completos del estudiante:</label>
+                <input type="text" placeholder="Ejem: LOPEZ CASTILLO" name="nomb" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <br>
+            <div class="input-box">
+                <label for="">Escriba nombres completos del estudiante:</label>
+                <input type="text" placeholder="Ejem: CATALINA SUSANA" name="ape" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <br>
+            <div class="input-box">
+                <label for="numberDNI">N° de DNI del estudiante:</label>
+                <input type="text" placeholder="Ejem: 79464389" name="dniEstu" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <br>
+            <div class="input-box">
+                <label for="imagenes">Adjuntar boleta o captura:</label>
+                <input type="file" style="padding: 10px 15px;" name="image" required>
+            </div>
+            <br>
+            <div class="input-box">
+                <label for="edad">Escoja el año de su salón:</label>
+                <select name="edades">
+                    <option value="2">2 AÑOS</option>
+                    <option value="3">3 AÑOS</option>
+                    <option value="3">4 AÑOS</option>
+                    <option value="5">5 AÑOS</option>
+                </select>
+            </div>
+            <br>
+            <button type="submit" class="btn">ENVIAR</button>
+
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    vertical-align: middle;
+    width: 300px;
+    margin: 5%;
+}
+a input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    border: 2px solid rgba(9, 10, 31);
+    border-radius: 40px;
+    font-size: 16px;
+    text-align: center;
+    color:  #071452;
+    padding: 20px 100px;
+    margin-top: 20%;
+    cursor: pointer;
+    
+}
